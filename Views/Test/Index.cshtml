@@ -1,0 +1,17 @@
+<h1>Simple page - VC on right</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <a class="btn btn-primary" style="width:200px;" onclick="UpdateCTime()" >Click to update</a><br>
+            <br>
+            <a class="btn btn-danger" style="width:200px;" id="SetAuto_id" onclick="SetAuto()" >Auto update</a>
+
+
+        </div>
+        <div class="col-md-4" id="TimerSlot_id">
+            @await Component.InvokeAsync("ControllerTime")
+        </div>
+
+    </div>
+</div>
